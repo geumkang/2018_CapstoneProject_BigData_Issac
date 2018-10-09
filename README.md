@@ -12,13 +12,7 @@
 *Ambari Server
 *Name Node
 *Data Node
-  
-  
-  
-  
-  
-  
-  
+<br><br><br><br>
 ### 사용 방법
 Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 
