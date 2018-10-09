@@ -62,5 +62,5 @@ expect -c "spawn ssh-copy-id -i $ID_RSA ec2-user@${IP[$i]}" \
 -c "send \"$PASSWORD\r\"" \
 -c "interact"
 echo "Send Key Complete!"
-ssh ec2-user@${IP[$i]} 'bash -s' < AutoSetting.sh ${IP[$i]} ${HostName[$i]} $hosttable
+ssh ec2-user@${IP[$i]} 'bash -s' < AutoSetting.sh ${IP[$i]} ${HostName[$i]} "\"$hosttable\""
 done
