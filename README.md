@@ -40,10 +40,18 @@ Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 
 #### [Ambari Server]
 1. 비밀번호 변경
-2. Host Name 변경
-3. Host Table 추가
+2. Host Name 변경 (/etc/sysconfig/network)
+3. Host Table 추가 (/etc/hosts)
 4. ntp 설치, umask 변경
-5. Selinux Disable
-6. 키 생성
-7. Node에 키 전송 및 동일한 세팅 진행
+5. Selinux Disable (/etc/selinux/config)
+6. 키 생성	(~/.ssh/id_rsa.pub)
+7. Node에 키 전송 및 SSH 접속
 
+#### [Node]
+1. Host Name 변경
+2. Host Table 추가
+3. 패스워드 접속 비허용
+4. ssh 서버 재구동
+5. ntp 설치, umask 변경
+6. Selinux Disable
+7. libtirpc-devel 설치 (HeartBeat Lost Error )
