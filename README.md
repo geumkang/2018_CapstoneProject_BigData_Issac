@@ -12,7 +12,8 @@
 *Ambari Server
 *Name Node
 *Data Node
-<br><br><br><br>
+
+<br><br><br>
 ### 사용 방법
 Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 
@@ -23,9 +24,8 @@ Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 	- 인자로 Node의 IP를 입력받는다.
 	- ex) ./AbrSetup.sh 172.31.25.201 172.31.18.118 172.31.21.118 172.31.27.94
 	- 앞에서부터 NameNode / DataNode 1~3을 의미한다.
-  
-  
-  
+
+<br><br><br>
 ### 설정 내역
 #### [Node]
 1. 비밀번호 변경
@@ -42,3 +42,4 @@ Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 5. Selinux Disable
 6. 키 생성
 7. Node에 키 전송 및 동일한 세팅 진행
+
