@@ -9,9 +9,9 @@
 컴퓨터는 AWS EC-2를 활용하였다.
 
 환경은 아래의 서버들로 구성이 되어 있으며, Data Node는 최소 3개를 필요로 한다.
-*Ambari Server
-*Name Node
-*Data Node
+* Ambari Server
+* Name Node
+* Data Node
 
 
 
