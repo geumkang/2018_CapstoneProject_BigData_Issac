@@ -2,13 +2,14 @@
 
 ####NodeSetting.sh####
 
-# 비밀번호 설정
+# Password Setting
 PASSWORD=1111
 echo $PASSWORD | sudo passwd --stdin root
 echo $PASSWORD | sudo passwd --stdin ec2-user
-echo "PASSWORD ${PASSWORD}로 변경 완료"
+echo "PASSWORD Changed : ${PASSWORD}"
 
-# password 켜기
+# Allow Password Access
 sudo sed -i '65d' /etc/ssh/sshd_config
 sudo sed -i '65i'"PasswordAuthentication yes" /etc/ssh/sshd_config
 sudo service sshd restart
+
