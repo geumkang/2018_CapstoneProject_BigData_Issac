@@ -2,7 +2,7 @@
 
 * * *
 
-##자동 클러스터 환경 구축 스크립트
+## 자동 클러스터 환경 구축 스크립트
 
 빅 데이터 시스템을 구현하기 위해서는 분산 컴퓨팅을 위한 Cluster를 필요로 한다.
 클러스터 관리 도구 중 Ambari를 설치하기 위하여 필요한 클러스터 환경을 자동으로 구성해주는 Shell Script 파일이다.
@@ -13,7 +13,7 @@
 *Name Node
 *Data Node
 
-###사용 방법
+### 사용 방법
 Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 
 1. Ambari Server 및 모든 Node에 현재 repo를 다운받는다.
@@ -25,15 +25,15 @@ Ambari Server / Node (4EA) 2개로 나누어 설명한다.
 	- 앞에서부터 NameNode / DataNode 1~3을 의미한다.
   
 
-###설정 내역
-#####[Node]
+### 설정 내역
+##### [Node]
 1. 비밀번호 변경
 	- 기본 비밀번호는 1111
 	- 변경 희망시 AbrSetting.sh / NodeSetting.sh 파일의 PASSWORD 변수값 수정
 2. 패스워드 접속 허용 (/etc/ssh/sshd_config)
 3. ssh 서버 재구동
 
-#####[Ambari Server]
+##### [Ambari Server]
 1. 비밀번호 변경
 2. Host Name 변경
 3. Host Table 추가
