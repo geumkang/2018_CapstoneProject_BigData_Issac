@@ -27,6 +27,3 @@ sudo sed -i '6i'"SELINUX=disabled" /etc/selinux/config
 # DataNode HeartBeat Lost Error
 sudo yum-config-manager --enable rhui-REGION-rhel-server-optional
 sudo yum -y install libtirpc-devel
- 
-
-
